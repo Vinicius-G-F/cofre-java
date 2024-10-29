@@ -35,7 +35,7 @@ public class Cofrinho {
     // remoção é maior do que o que tem disponível no cofre, se o valor de remoção for maior então ele dá
     // uma mensagem de erro e impede a remoção retornando a moeda de volta a lista sem nenhuma alteração
     // caso contrário o método "sacar" da moeda é chamado para reduzir a quantidade disponivel da moeda.
-    // Caso a moeda seja zerada ela o filter verifica se o valor dela é maior que zero para então decidir
+    // Caso a moeda seja zerada o filter verifica se o valor dela é maior que zero para então decidir
     // se ela deve permanecer na lista
     public void RemoverMoeda(Moeda moeda){
         if (this.contemMoeda(moeda)) {

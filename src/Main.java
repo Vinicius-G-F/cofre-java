@@ -70,8 +70,8 @@ public class Main {
             } else if (opcaoSelecionada == 3) {
                 cofre.ListarMoedas();
                 continue;
-                //opção 4 para mostrar valot total e método da classe cofre sendo chamado, o print é
-                // feito dentro da classe cofre mesmo
+                //opção 4 para mostrar o valor total e método responsável por essa tarefa sendo chamado
+                // na classe cofre, o print é feito dentro da classe cofre mesmo
             } else if (opcaoSelecionada == 4) {
                 cofre.ValorTotalEmReais();
                 continue;
@@ -108,7 +108,7 @@ public class Main {
     }
 
     private static void adicionarMoeda(int opcao, double valor, Cofrinho cofre){
-        // instanciando a moeda selecionada e adicionando a classe cofre junto com o valor da moeda
+        // instanciando a moeda selecionada e adicionando o objeto ao cofre junto com o valor da moeda
         // para insersão
         if (opcao == 1){
             Real real = new Real(valor);
